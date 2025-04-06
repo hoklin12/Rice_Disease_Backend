@@ -16,7 +16,7 @@ This repository provides a basic setup for a Python API using:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/hoklin12/Rice_Disease_Backend.git
 cd your-repo-name
 ```
 
