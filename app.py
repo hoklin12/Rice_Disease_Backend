@@ -34,8 +34,8 @@ class RiceDiseaseClassifier:
     def _load_individual_models(self):
         try:
             models = [
-                load_model('/Users/vanhoklin/Desktop/ds model/densenet121_7classes_model.h5'),
-                load_model('/Users/vanhoklin/Desktop/ds model/mobilenetv2_7classes_model.h5'),
+                load_model('/Users/vanhoklin/Desktop/model/densenet121_7classes_model.h5'),
+                load_model('/Users/vanhoklin/Desktop/model/mobilenetv2_7classes_model.h5'),
                 self._create_efficientnet_model()
             ]
             self.logger.info("Individual models loaded successfully")
@@ -51,7 +51,7 @@ class RiceDiseaseClassifier:
         x = Dense(256, activation='relu')(x)
         predictions = Dense(7, activation='softmax')(x)
         model = Model(inputs=base_model.input, outputs=predictions)
-        model.load_weights('/Users/vanhoklin/Desktop/ds model/efficientnetb0_weights.h5')
+        model.load_weights('/Users/vanhoklin/Desktop/model/efficientnetb0_weights.h5')
         return model
 
     def _build_ensemble_model(self):
