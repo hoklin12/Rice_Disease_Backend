@@ -45,5 +45,3 @@ python app.py
 By default, the app runs on `http://127.0.0.1:5000/`.
 
 ---
-
-```
