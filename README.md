@@ -9,6 +9,7 @@ This repository provides a basic setup for a Python API using:
 - Python 3.10
 - TensorFlow 2.15
 - Flask 3.0.3
+```
 
 ## 🚀 Getting Started
 
